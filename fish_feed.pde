@@ -11,6 +11,9 @@ void draw(){
   background(255);
   f.draw();
   feed.draw();
+  fill(0);
+  textSize(30);
+  text(String.valueOf(f.count), 200, 50);
 }
 
 void mouseDragged(){

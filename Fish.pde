@@ -6,6 +6,7 @@ class Fish{
   float width = 50;
   float height = 50;
   boolean addState = false;
+  int count = 0;
 
   Fish(float x, float y){
     this.x = x;
@@ -44,6 +45,7 @@ class Fish{
   void eatFeed(Feed feed){
     if(feed.x>x && feed.x<x+width && feed.y>y && feed.y<y+height){
       feed.randomPosition();
+      count+=1;
     }
   }
 
