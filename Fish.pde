@@ -1,8 +1,11 @@
 class Fish{
+  boolean locked = false;
+  float xOffset=0, yOffset=0;
   float x;
   float y;
   float width = 50;
   float height = 50;
+  boolean addState = false;
 
   Fish(float x, float y){
     this.x = x;
@@ -20,10 +23,10 @@ class Fish{
   }
 
   void drageBlock(){
+    println(locked);
     if(locked){
       x=mouseX-xOffset;
       y=mouseY-yOffset;
-      return true;
     }
   }
 
@@ -34,7 +37,6 @@ class Fish{
     }else{
       locked = false;
     }
-
     xOffset = mouseX-x;
     yOffset = mouseY-y;
   }

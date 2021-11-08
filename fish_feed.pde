@@ -6,9 +6,14 @@ void setup(){
 }
 
 void draw(){
+  background(255);
   f.draw();
 }
 
-void mouseDraged(){
+void mouseDragged(){
   f.drageBlock(); 
+}
+
+void mousePressed(){
+  f.presses();
 }
