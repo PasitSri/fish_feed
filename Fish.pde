@@ -8,20 +8,24 @@ class Fish{
   boolean addState = false;
   int count = 0;
 
+
   Fish(float x, float y){
     this.x = x;
     this.y = y;
   }
   
+
   void setPosiion(float x, float y){
     this.x = x;
     this.y = y;
   }
 
+
   void draw(){
     fill(#38E071);
     rect(x, y, width, height,30);
   }
+
 
   void drageBlock(){
     println(locked);
@@ -30,6 +34,7 @@ class Fish{
       y=mouseY-yOffset;
     }
   }
+
 
   void presses(){
     addState = true;
@@ -42,11 +47,13 @@ class Fish{
     yOffset = mouseY-y;
   }
 
+
   void eatFeed(Feed feed){
     if(feed.x>x && feed.x<x+width && feed.y>y && feed.y<y+height){
       feed.randomPosition();
       count+=1;
     }
   }
+
 
 }
