@@ -41,4 +41,10 @@ class Fish{
     yOffset = mouseY-y;
   }
 
+  void eatFeed(Feed feed){
+    if(feed.x>x && feed.x<x+width && feed.y>y && feed.y<y+height){
+      feed.randomPosition();
+    }
+  }
+
 }

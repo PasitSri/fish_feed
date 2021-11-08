@@ -10,8 +10,14 @@ class Feed{
   }
 
   void draw(){
-    fill(#38E071);
+    fill(#ef536d);
     rect(x, y, width, height,30);
   }
+
+  void randomPosition(){
+    this.x = random(450);
+    this.y = random(450);
+  }
+
 
 }
