@@ -14,7 +14,7 @@ void draw(){
   feed.draw();
   fill(0);
   textSize(30);
-  text(String.valueOf(f.count), 200, 1);
+  text(String.valueOf(f.count), 200, 50);
 }
 
 
